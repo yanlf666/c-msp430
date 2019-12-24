@@ -1,0 +1,21 @@
+
+
+#include <msp430.h>
+
+int main(void)
+{
+
+     WDTCLT =  WDTPW | WDTHOLD;
+
+     PM5CTL0 &= ~LOCKPM5;
+
+     
+     P1DIR |= BIT0;
+     P1OUT |= BIT0;
+     
+     
+     while(1)
+     {
+	  
+     }
+}
